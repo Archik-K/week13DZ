@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <title>Задание 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="input_1">
+        <input type="text" id="input_2">
+        <div id="buttons">
+            <button onclick="plus()" id="button1">Сложить</button>
+            <button onclick="minus()" id="button2">Вычесть</button>
+            <button onclick="multiply()" id="button3">Умножить</button>
+            <button onclick="delit()" id="button4">Разделить</button></div>
+
+        <hr id="color">
+        <p id="out">Результат:</p>
+    </div>
+    <script>
+        function plus() {
+            let num1, num2, result;
+            num1 = document.getElementById('input_1').value;
+            num1 = parseInt(num1);
+
+            num2 = document.getElementById('input_2').value;
+            num2 = parseInt(num2);
+
+            result = num1 + num2;
+            document.getElementById('out').innerHTML = result;
+        }
+
+        function minus() {
+            let num1, num2, result;
+            num1 = document.getElementById('input_1').value;
+            num1 = parseInt(num1);
+
+            num2 = document.getElementById('input_2').value;
+            num2 = parseInt(num2);
+
+            result = num1 - num2;
+            document.getElementById('out').innerHTML = result;
+        }
+
+        function minus() {
+            let num1, num2, result;
+            num1 = document.getElementById('input_1').value;
+            num1 = parseInt(num1);
+
+            num2 = document.getElementById('input_2').value;
+            num2 = parseInt(num2);
+
+            result = num1 - num2;
+            document.getElementById('out').innerHTML = result;
+        }
+
+        function multiply() {
+            let num1, num2, result;
+            num1 = document.getElementById('input_1').value;
+            num1 = parseInt(num1);
+
+            num2 = document.getElementById('input_2').value;
+            num2 = parseInt(num2);
+
+            result = num1 * num2;
+            document.getElementById('out').innerHTML = result;
+        }
+
+        function delit() {
+            let num1, num2, result;
+            num1 = document.getElementById('input_1').value;
+            num1 = parseInt(num1);
+
+            num2 = document.getElementById('input_2').value;
+            num2 = parseInt(num2);
+
+            result = num1 / num2;
+            document.getElementById('out').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
